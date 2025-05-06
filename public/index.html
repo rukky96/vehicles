@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Homepage</h1>
+        <p><input id=search type="text" value=""><button id="search-button">Search</button></p>
+        <button id="load-button">Load Cars</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>S/N</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Color</th>
+                    <th>Actions</th>
+                </tr> 
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+              
+        </table>
+        <div id="edit-form">
+            <div id="form-container">
+                <form>
+                    <p>Brand: <input id="brand" type="text" value=""></p>
+                    <p>Model: <input id="model" type="text" value=""></p>
+                    <p>Year: <input id="year" type="text" value=""></p>
+                    <p>Color: <input id="color" type="text" value=""></p>
+                </form>
+                <p><button id="cancel-button">Cancel</button><button id="submit-button">Submit</button></p>
+            </div>
+
+        </div>
+        <script src="/index.js"></script>
+    </body>
+</html>

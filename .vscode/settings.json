@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "taskmanager-3mtt-taskmanager3mtt.f.aivencloud.com",
+            "port": 10235,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "aiven",
+            "database": "defaultdb",
+            "username": "avnadmin"
+        }
+    ]
+}
