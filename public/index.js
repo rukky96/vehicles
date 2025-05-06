@@ -8,6 +8,7 @@ async function fetchData() {
         const response = await fetch('/api/cars');
         const data = await response.json();
         cars = data;
+        console.log(cars);
         cars.forEach((car, index) => {
         const row = document.createElement("tr");
         row.innerHTML = `
