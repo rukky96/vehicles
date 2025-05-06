@@ -5,7 +5,7 @@ async function fetchData() {
     const tableBody = document.getElementById("table-body");
     tableBody.innerHTML = "";
     try {
-        const response = await fetch('http://localhost:3333/api/cars');
+        const response = await fetch('/api/cars');
         const data = await response.json();
         cars = data;
         cars.forEach((car, index) => {
@@ -61,7 +61,7 @@ document.getElementById("submit-button").addEventListener("click", async (e) => 
 
 
     try {
-        const response = await fetch(`http://localhost:3333/api/cars/${currentId}`,
+        const response = await fetch(`/api/cars/${currentId}`,
             {
                 method: "PUT",
                 headers: {
@@ -83,6 +83,10 @@ document.getElementById("submit-button").addEventListener("click", async (e) => 
     } catch(error){
         console.log(error);
     }
+})
+
+document.getElementById('search-button').addEventListener("click", (e)=>{
+    
 })
 
 
