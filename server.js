@@ -12,6 +12,8 @@ app.use(express.static(path.join(__dirname, "uploads")));
 app.use(express.urlencoded({ extended: true }));
 dotenv.config();
 
+const port = process.env.PORT || 3333;
+
 
 app.use(cors());
 app.use(express.json());
@@ -120,6 +122,8 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, "index.html"))
 })
 
-app.listen(3333, () => {
+app.listen(port, () => {
     console.log("Server is running");
 })
+
+module.exports = app;
